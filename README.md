@@ -3,7 +3,7 @@
 ## Installation
 
 ```
-npm install --save charity-base/charity-base-schema
+npm install --save charity-base/charity-base-schema#v2.6.0
 ```
 
 ## Examples
