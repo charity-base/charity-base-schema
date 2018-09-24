@@ -1,0 +1,567 @@
+{
+  "charity": {
+    "properties": {
+      "_id": {
+        "type": "keyword"
+      },
+      "activities": {
+        "type": "text"
+      },
+      "alternativeNames": {
+        "type": "text"
+      },
+      "areaOfBenefit": {
+        "type": "text"
+      },
+      "areasOfOperation": {
+        "properties": {
+          "alternativeName": {
+            "type": "text"
+          },
+          "id": {
+            "type": "keyword"
+          },
+          "isWelsh": {
+            "type": "boolean"
+          },
+          "locationType": {
+            "type": "text"
+          },
+          "name": {
+            "type": "text"
+          },
+          "parentId": {
+            "type": "keyword"
+          }
+        }
+      },
+      "beneficiaries": {
+        "properties": {
+          "id": {
+            "type": "double"
+          },
+          "name": {
+            "type": "text"
+          }
+        }
+      },
+      "causes": {
+        "properties": {
+          "id": {
+            "type": "double"
+          },
+          "name": {
+            "type": "text"
+          }
+        }
+      },
+      "companiesHouseNumber": {
+        "type": "keyword"
+      },
+      "contact": {
+        "properties": {
+          "address": {
+            "type": "text"
+          },
+          "email": {
+            "type": "keyword"
+          },
+          "geo": {
+            "properties": {
+              "admin_county": {
+                "type": "text"
+              },
+              "admin_district": {
+                "type": "text"
+              },
+              "admin_ward": {
+                "type": "text"
+              },
+              "ccg": {
+                "type": "text"
+              },
+              "codes": {
+                "properties": {
+                  "admin_county": {
+                    "type": "text"
+                  },
+                  "admin_district": {
+                    "type": "text"
+                  },
+                  "admin_ward": {
+                    "type": "text"
+                  },
+                  "ccg": {
+                    "type": "text"
+                  },
+                  "nuts": {
+                    "type": "text"
+                  },
+                  "parish": {
+                    "type": "text"
+                  },
+                  "parliamentary_constituency": {
+                    "type": "text"
+                  }
+                }
+              },
+              "country": {
+                "type": "text"
+              },
+              "eastings": {
+                "type": "double"
+              },
+              "european_electoral_region": {
+                "type": "text"
+              },
+              "incode": {
+                "type": "text"
+              },
+              "latitude": {
+                "type": "double"
+              },
+              "longitude": {
+                "type": "double"
+              },
+              "lsoa": {
+                "type": "text"
+              },
+              "msoa": {
+                "type": "text"
+              },
+              "nhs_ha": {
+                "type": "text"
+              },
+              "northings": {
+                "type": "double"
+              },
+              "nuts": {
+                "type": "text"
+              },
+              "outcode": {
+                "type": "text"
+              },
+              "parish": {
+                "type": "text"
+              },
+              "parliamentary_constituency": {
+                "type": "text"
+              },
+              "postcode": {
+                "type": "keyword"
+              },
+              "primary_care_trust": {
+                "type": "text"
+              },
+              "quality": {
+                "type": "double"
+              },
+              "region": {
+                "type": "text"
+              }
+            }
+          },
+          "person": {
+            "type": "text"
+          },
+          "phone": {
+            "type": "keyword"
+          },
+          "postcode": {
+            "type": "keyword"
+          }
+        }
+      },
+      "createdAt": {
+        "type": "date"
+      },
+      "fyend": {
+        "type": "text"
+      },
+      "geo_coords": {
+        "type": "geo_point"
+      },
+      "governingDoc": {
+        "type": "text"
+      },
+      "grants": {
+        "type": "nested",
+        "include_in_parent": true,
+        "properties": {
+          "amountAwarded": {
+            "type": "double"
+          },
+          "awardDate": {
+            "type": "date"
+          },
+          "beneficiaryLocation": {
+            "properties": {
+              "countryCode": {
+                "type": "keyword"
+              },
+              "geoCode": {
+                "type": "keyword"
+              },
+              "geoCodeType": {
+                "type": "keyword"
+              },
+              "latitude": {
+                "type": "double"
+              },
+              "longitude": {
+                "type": "double"
+              },
+              "name": {
+                "type": "text"
+              }
+            }
+          },
+          "classifications": {
+            "properties": {
+              "title": {
+                "type": "text"
+              }
+            }
+          },
+          "topicModelling": {
+            "properties": {
+              "g_to_c_desc_20_extrastop": {
+                "type": "nested",
+                "properties": {
+                  "id": { "type": "integer" },
+                  "name": { "type": "text" },
+                  "score": { "type": "double" }
+                }
+              }
+            }
+          },
+          "currency": {
+            "type": "keyword"
+          },
+          "description": {
+            "type": "text"
+          },
+          "fundingOrganization": {
+            "properties": {
+              "id": {
+                "type": "keyword"
+              },
+              "name": {
+                "type": "text"
+              }
+            }
+          },
+          "id": {
+            "type": "keyword"
+          },
+          "plannedDate": {
+            "properties": {
+              "duration": {
+                "type": "double"
+              },
+              "endDate": {
+                "type": "date"
+              },
+              "startDate": {
+                "type": "date"
+              }
+            }
+          },
+          "title": {
+            "type": "text"
+          }
+        }
+      },
+      "ids": {
+        "properties": {
+          "GB-CHC": {
+            "type": "integer"
+          },
+          "charityId": {
+            "type": "keyword"
+          }
+        }
+      },
+      "income": {
+        "properties": {
+          "annual": {
+            "properties": {
+              "expend": {
+                "type": "double"
+              },
+              "financialYear": {
+                "properties": {
+                  "begin": {
+                    "type": "date"
+                  },
+                  "end": {
+                    "type": "date"
+                  }
+                }
+              },
+              "income": {
+                "type": "double"
+              }
+            }
+          },
+          "breakdown": {
+            "properties": {
+              "artype": {
+                "type": "keyword"
+              },
+              "asset_close": {
+                "type": "double"
+              },
+              "asset_gain": {
+                "type": "double"
+              },
+              "asset_open": {
+                "type": "double"
+              },
+              "cash_assets": {
+                "type": "double"
+              },
+              "charity_acc": {
+                "type": "boolean"
+              },
+              "cons_acc": {
+                "type": "boolean"
+              },
+              "credit_1": {
+                "type": "double"
+              },
+              "credit_long": {
+                "type": "double"
+              },
+              "current_assets": {
+                "type": "double"
+              },
+              "employees": {
+                "type": "double"
+              },
+              "exp_charble": {
+                "type": "double"
+              },
+              "exp_dep": {
+                "type": "double"
+              },
+              "exp_gov": {
+                "type": "double"
+              },
+              "exp_grant": {
+                "type": "double"
+              },
+              "exp_invest": {
+                "type": "double"
+              },
+              "exp_other": {
+                "type": "double"
+              },
+              "exp_support": {
+                "type": "double"
+              },
+              "exp_total": {
+                "type": "double"
+              },
+              "exp_trade": {
+                "type": "double"
+              },
+              "exp_vol": {
+                "type": "double"
+              },
+              "financialYear": {
+                "properties": {
+                  "begin": {
+                    "type": "date"
+                  },
+                  "end": {
+                    "type": "date"
+                  }
+                }
+              },
+              "fixed_assets": {
+                "type": "double"
+              },
+              "funds_end": {
+                "type": "double"
+              },
+              "funds_restrict": {
+                "type": "double"
+              },
+              "funds_total": {
+                "type": "double"
+              },
+              "funds_unrestrict": {
+                "type": "double"
+              },
+              "inc_char": {
+                "type": "double"
+              },
+              "inc_end": {
+                "type": "double"
+              },
+              "inc_fr": {
+                "type": "double"
+              },
+              "inc_invest": {
+                "type": "double"
+              },
+              "inc_leg": {
+                "type": "double"
+              },
+              "inc_other": {
+                "type": "double"
+              },
+              "inc_total": {
+                "type": "double"
+              },
+              "inc_vol": {
+                "type": "double"
+              },
+              "invest_assets": {
+                "type": "double"
+              },
+              "invest_gain": {
+                "type": "double"
+              },
+              "open_assets": {
+                "type": "double"
+              },
+              "pension_assets": {
+                "type": "double"
+              },
+              "pension_gain": {
+                "type": "double"
+              },
+              "reserves": {
+                "type": "double"
+              },
+              "total_assets": {
+                "type": "double"
+              },
+              "volunteers": {
+                "type": "double"
+              }
+            }
+          },
+          "latest": {
+            "properties": {
+              "date": {
+                "type": "date"
+              },
+              "total": {
+                "type": "double"
+              }
+            }
+          }
+        }
+      },
+      "isRegistered": {
+        "type": "boolean"
+      },
+      "isSchool": {
+        "type": "boolean"
+      },
+      "isWelsh": {
+        "type": "boolean"
+      },
+      "name": {
+        "type": "text"
+      },
+      "operations": {
+        "properties": {
+          "id": {
+            "type": "double"
+          },
+          "name": {
+            "type": "text"
+          }
+        }
+      },
+      "people": {
+        "properties": {
+          "employees": {
+            "type": "double"
+          },
+          "trustees": {
+            "type": "double"
+          },
+          "volunteers": {
+            "type": "double"
+          }
+        }
+      },
+      "regulator": {
+        "type": "keyword"
+      },
+      "subsidiaries": {
+        "properties": {
+          "areaOfBenefit": {
+            "type": "text"
+          },
+          "contact": {
+            "properties": {
+              "address": {
+                "type": "text"
+              },
+              "email": {
+                "type": "keyword"
+              },
+              "person": {
+                "type": "text"
+              },
+              "phone": {
+                "type": "keyword"
+              },
+              "postcode": {
+                "type": "keyword"
+              }
+            }
+          },
+          "governingDoc": {
+            "type": "text"
+          },
+          "isRegistered": {
+            "type": "boolean"
+          },
+          "name": {
+            "type": "text"
+          }
+        }
+      },
+      "trustees": {
+        "properties": {
+          "incorporated": {
+            "type": "boolean"
+          },
+          "names": {
+            "type": "text"
+          }
+        }
+      },
+      "registration": {
+        "properties": {
+          "registered": {
+            "type": "date"
+          },
+          "removed": {
+            "type": "date"
+          },
+          "removedCode": {
+            "type": "keyword"
+          },
+          "removedReason": {
+            "type": "text"
+          }
+        }
+      },
+      "objectives": "text",
+      "updatedAt": {
+        "type": "date"
+      },
+      "website": {
+        "type": "keyword"
+      }
+    }
+  }
+}
