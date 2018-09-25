@@ -20,7 +20,7 @@ const getGrantSchema = mongoose => new mongoose.Schema({
   }],
   'recipientOrganization' : [{
     'id' : String,
-    'GB-CHC' : String,
+    'GB-CHC' : Number,
   }],
   'beneficiaryLocation' : [{
     'name' : String,
