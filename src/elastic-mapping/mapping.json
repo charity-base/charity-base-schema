@@ -225,7 +225,7 @@
           },
           "topicModelling": {
             "properties": {
-              "g_to_c_desc_20_extrastop": {
+              "topics": {
                 "type": "nested",
                 "properties": {
                   "id": { "type": "integer" },

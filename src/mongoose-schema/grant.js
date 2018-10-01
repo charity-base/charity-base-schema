@@ -31,11 +31,11 @@ const getGrantSchema = mongoose => new mongoose.Schema({
     'longitude' : Number,
   }],
   'topicModelling': {
-    'g_to_c_desc_20_extrastop': [{
+    'topics': [{
       id: Number,
       name: String,
       score: Number,
-    }]
+    }],
   },
 })
 
