@@ -1,9 +1,6 @@
 {
   "charity": {
     "properties": {
-      "_id": {
-        "type": "keyword"
-      },
       "activities": {
         "type": "text"
       },
