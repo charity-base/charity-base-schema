@@ -555,7 +555,9 @@
           }
         }
       },
-      "objectives": "text",
+      "objectives": {
+        "type": "text"
+      },
       "updatedAt": {
         "type": "date"
       },
