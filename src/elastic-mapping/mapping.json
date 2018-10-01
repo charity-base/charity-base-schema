@@ -202,6 +202,9 @@
               "geoCodeType": {
                 "type": "keyword"
               },
+              "geographic code (from GIFTS)": {
+                "type": "keyword"
+              },
               "latitude": {
                 "type": "double"
               },

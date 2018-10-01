@@ -27,6 +27,7 @@ const getGrantSchema = mongoose => new mongoose.Schema({
     'countryCode' : String,
     'geoCode' : String,
     'geoCodeType' : String,
+    'geographic code (from GIFTS)' : String,
     'latitude' : Number,
     'longitude' : Number,
   }],
