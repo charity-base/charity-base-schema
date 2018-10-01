@@ -158,6 +158,9 @@
               }
             }
           },
+          "geoCoords": {
+            "type": "geo_point"
+          },
           "person": {
             "type": "text"
           },
@@ -174,9 +177,6 @@
       },
       "fyend": {
         "type": "text"
-      },
-      "geo_coords": {
-        "type": "geo_point"
       },
       "governingDoc": {
         "type": "text"
