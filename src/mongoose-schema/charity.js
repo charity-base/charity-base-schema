@@ -12,11 +12,8 @@ const getCharitySchema = mongoose => new mongoose.Schema({
   "governingDoc": String,
   "areaOfBenefit": String,
   "contact": {
-    "email": String,
-    "person": String,
-    "phone": String,
-    "postcode": String,
     "address": [String],
+    "email": String,
     "geo": {
       "postcode" : String,
       "quality" : Number,
@@ -49,9 +46,12 @@ const getCharitySchema = mongoose => new mongoose.Schema({
         "ccg" : String,
         "nuts" : String
       },
-    }
+    },
+    "geoCoords": String,
+    "person": String,
+    "phone": String,
+    "postcode": String,
   },
-  "geo_coords": String,
   "isWelsh": Boolean,
   "trustees": {
     "incorporated": Boolean,
