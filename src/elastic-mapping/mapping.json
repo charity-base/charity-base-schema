@@ -22,7 +22,7 @@
             "type": "boolean"
           },
           "locationType": {
-            "type": "text"
+            "type": "keyword"
           },
           "name": {
             "type": "text"
@@ -35,7 +35,7 @@
       "beneficiaries": {
         "properties": {
           "id": {
-            "type": "double"
+            "type": "keyword"
           },
           "name": {
             "type": "text"
@@ -45,7 +45,7 @@
       "causes": {
         "properties": {
           "id": {
-            "type": "double"
+            "type": "keyword"
           },
           "name": {
             "type": "text"
@@ -66,53 +66,53 @@
           "geo": {
             "properties": {
               "admin_county": {
-                "type": "text"
+                "type": "keyword"
               },
               "admin_district": {
-                "type": "text"
+                "type": "keyword"
               },
               "admin_ward": {
-                "type": "text"
+                "type": "keyword"
               },
               "ccg": {
-                "type": "text"
+                "type": "keyword"
               },
               "codes": {
                 "properties": {
                   "admin_county": {
-                    "type": "text"
+                    "type": "keyword"
                   },
                   "admin_district": {
-                    "type": "text"
+                    "type": "keyword"
                   },
                   "admin_ward": {
-                    "type": "text"
+                    "type": "keyword"
                   },
                   "ccg": {
-                    "type": "text"
+                    "type": "keyword"
                   },
                   "nuts": {
-                    "type": "text"
+                    "type": "keyword"
                   },
                   "parish": {
-                    "type": "text"
+                    "type": "keyword"
                   },
                   "parliamentary_constituency": {
-                    "type": "text"
+                    "type": "keyword"
                   }
                 }
               },
               "country": {
-                "type": "text"
+                "type": "keyword"
               },
               "eastings": {
                 "type": "double"
               },
               "european_electoral_region": {
-                "type": "text"
+                "type": "keyword"
               },
               "incode": {
-                "type": "text"
+                "type": "keyword"
               },
               "latitude": {
                 "type": "double"
@@ -121,40 +121,40 @@
                 "type": "double"
               },
               "lsoa": {
-                "type": "text"
+                "type": "keyword"
               },
               "msoa": {
-                "type": "text"
+                "type": "keyword"
               },
               "nhs_ha": {
-                "type": "text"
+                "type": "keyword"
               },
               "northings": {
                 "type": "double"
               },
               "nuts": {
-                "type": "text"
+                "type": "keyword"
               },
               "outcode": {
-                "type": "text"
+                "type": "keyword"
               },
               "parish": {
-                "type": "text"
+                "type": "keyword"
               },
               "parliamentary_constituency": {
-                "type": "text"
+                "type": "keyword"
               },
               "postcode": {
                 "type": "keyword"
               },
               "primary_care_trust": {
-                "type": "text"
+                "type": "keyword"
               },
               "quality": {
                 "type": "double"
               },
               "region": {
-                "type": "text"
+                "type": "keyword"
               }
             }
           },
@@ -176,7 +176,7 @@
         "type": "date"
       },
       "fyend": {
-        "type": "text"
+        "type": "keyword"
       },
       "governingDoc": {
         "type": "text"
@@ -275,7 +275,7 @@
       "ids": {
         "properties": {
           "GB-CHC": {
-            "type": "integer"
+            "type": "keyword"
           },
           "charityId": {
             "type": "keyword"
@@ -471,7 +471,7 @@
       "operations": {
         "properties": {
           "id": {
-            "type": "double"
+            "type": "keyword"
           },
           "name": {
             "type": "text"
@@ -551,7 +551,7 @@
             "type": "keyword"
           },
           "removedReason": {
-            "type": "text"
+            "type": "keyword"
           }
         }
       },
