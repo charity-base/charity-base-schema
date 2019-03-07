@@ -282,13 +282,10 @@
           }
         }
       },
-      "income": {
+      "financial": {
         "properties": {
-          "annual": {
+          "latest": {
             "properties": {
-              "expend": {
-                "type": "double"
-              },
               "financialYear": {
                 "properties": {
                   "begin": {
@@ -300,6 +297,29 @@
                 }
               },
               "income": {
+                "type": "double"
+              },
+              "spending": {
+                "type": "double"
+              }
+            }
+          },
+          "annual": {
+            "properties": {
+              "financialYear": {
+                "properties": {
+                  "begin": {
+                    "type": "date"
+                  },
+                  "end": {
+                    "type": "date"
+                  }
+                }
+              },
+              "income": {
+                "type": "double"
+              },
+              "spending": {
                 "type": "double"
               }
             }
@@ -440,16 +460,6 @@
                 "type": "double"
               },
               "volunteers": {
-                "type": "double"
-              }
-            }
-          },
-          "latest": {
-            "properties": {
-              "date": {
-                "type": "date"
-              },
-              "total": {
                 "type": "double"
               }
             }

@@ -59,10 +59,14 @@ const getCharitySchema = mongoose => new mongoose.Schema({
   },
   "website": String,
   "isSchool": Boolean,
-  "income": {
+  "financial": {
     "latest": {
-      "date": Date,
-      "total": Number,
+      "financialYear" : {
+        "begin" : Date,
+        "end" : Date,
+      },
+      "income" : Number,
+      "spending" : Number,
     },
     "annual": [{
       "financialYear" : {
@@ -70,8 +74,9 @@ const getCharitySchema = mongoose => new mongoose.Schema({
         "end" : Date,
       },
       "income" : Number,
-      "expend" : Number,
+      "spending" : Number,
     }],
+    "breakdown": []
   },
   "fyend": String,
   "companiesHouseNumber": String,
