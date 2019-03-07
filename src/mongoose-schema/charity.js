@@ -121,6 +121,7 @@ const getCharitySchema = mongoose => new mongoose.Schema({
     "removalCode": String,
     "removalReason": String,
   }],
+  "lastRegistrationDate": Date,
   "objectives": String,
   "grants": [
     getGrantSchema(mongoose)

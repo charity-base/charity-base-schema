@@ -555,6 +555,9 @@
           }
         }
       },
+      "lastRegistrationDate": {
+        "type": "date"
+      },
       "objectives": {
         "type": "text"
       },
