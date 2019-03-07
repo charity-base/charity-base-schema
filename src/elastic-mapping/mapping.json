@@ -539,21 +539,24 @@
           }
         }
       },
-      "registration": {
+      "registrations": {
         "properties": {
-          "registered": {
+          "registrationDate": {
             "type": "date"
           },
-          "removed": {
+          "removalDate": {
             "type": "date"
           },
-          "removedCode": {
+          "removalCode": {
             "type": "keyword"
           },
-          "removedReason": {
+          "removalReason": {
             "type": "keyword"
           }
         }
+      },
+      "lastRegistrationDate": {
+        "type": "date"
       },
       "objectives": {
         "type": "text"

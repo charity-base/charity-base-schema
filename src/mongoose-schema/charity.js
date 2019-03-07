@@ -115,12 +115,13 @@ const getCharitySchema = mongoose => new mongoose.Schema({
     "employees": Number,
     "volunteers": Number,
   },
-  "registration": [{
-    "registered": Date,
-    "removed": Date,
-    "removedCode": String,
-    "removedReason": String,
+  "registrations": [{
+    "registrationDate": Date,
+    "removalDate": Date,
+    "removalCode": String,
+    "removalReason": String,
   }],
+  "lastRegistrationDate": Date,
   "objectives": String,
   "grants": [
     getGrantSchema(mongoose)
