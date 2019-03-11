@@ -1,5 +1,5 @@
-const charities = require('./charities')
+const charity = require('./charity')
 
 module.exports = {
-  charities,
+  charity,
 }
