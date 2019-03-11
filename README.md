@@ -8,7 +8,7 @@ npm install --save charity-base/charity-base-schema#v6.0.0
 
 ## Example
 
-Create an Elasticsearch mapping of charities registered with the Charity Commission for England & Wales:
+Create an Elasticsearch index of charities registered with the Charity Commission for England & Wales:
 
 ```js
 const elasticsearch = require('elasticsearch')
@@ -18,11 +18,14 @@ const client = new elasticsearch.Client({
   host: 'localhost:9200',
 })
 
-client.indices.putMapping({
+client.indices.create({
   index: 'charity-base-chc-charities',
-  type: '_doc',
-  body: chc.charity,
-}, (err, response) => {
+  body: {
+    mappings: {
+      _doc: chc.charity,
+    },
+  }
+}, (err, res) => {
   ...
 })
 ```
