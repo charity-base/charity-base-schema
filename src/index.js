@@ -1,4 +1,5 @@
-const mongooseSchema = require('./mongoose-schema')
-const elasticMapping = require('./elastic-mapping')
+const chc = require('./chc')
 
-module.exports = { mongooseSchema, elasticMapping }
+module.exports = {
+  chc,
+}
