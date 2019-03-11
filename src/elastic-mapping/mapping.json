@@ -1,5 +1,5 @@
 {
-  "charity": {
+  "_doc": {
     "properties": {
       "activities": {
         "type": "text"
