@@ -3,34 +3,25 @@
 ## Installation
 
 ```
-npm install --save charity-base/charity-base-schema#v5.0.0
+npm install --save charity-base/charity-base-schema#v6.0.0
 ```
 
-## Examples
+## Example
 
-Initialise a Mongoose model:
-
-```js
-const mongoose = require('mongoose')
-const { mongooseSchema } = require('charity-base-schema')
-
-const Charity = mongoose.model('Charity', mongooseSchema.charity(mongoose))
-```
-
-Create an Elasticsearch mapping:
+Create an Elasticsearch mapping of charities registered with the Charity Commission for England & Wales:
 
 ```js
 const elasticsearch = require('elasticsearch')
-const { elasticMapping } = require('charity-base-schema')
+const { chc } = require('charity-base-schema')
 
 const client = new elasticsearch.Client({
   host: 'localhost:9200',
 })
 
 client.indices.putMapping({
-  index: 'charity-base',
-  type: 'charity',
-  body: elasticMapping(),
+  index: 'charity-base-chc-charities',
+  type: '_doc',
+  body: chc.charity,
 }, (err, response) => {
   ...
 })
