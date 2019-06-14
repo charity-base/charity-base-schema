@@ -545,6 +545,32 @@
         },
         "names": {
           "type": "text"
+        },
+        "objects": {
+          "properties": {
+            "id": {
+              "type": "keyword"
+            },
+            "name": {
+              "type": "text"
+            },
+            "trusteeships": {
+              "type": "integer"
+            },
+            "otherCharities": {
+              "properties": {
+                "id": {
+                  "type": "keyword"
+                },
+                "name": {
+                  "type": "text"
+                },
+                "status": {
+                  "type": "keyword"
+                }
+              }
+            }
+          }
         }
       }
     },
