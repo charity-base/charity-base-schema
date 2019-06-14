@@ -468,9 +468,6 @@
     "isRegistered": {
       "type": "boolean"
     },
-    "isSchool": {
-      "type": "boolean"
-    },
     "isWelsh": {
       "type": "boolean"
     },
