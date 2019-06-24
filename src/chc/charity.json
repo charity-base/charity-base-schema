@@ -168,6 +168,16 @@
         },
         "postcode": {
           "type": "keyword"
+        },
+        "social": {
+          "properties": {
+            "platform": {
+              "type": "keyword"
+            },
+            "handle": {
+              "type": "keyword"
+            }
+          }
         }
       }
     },
