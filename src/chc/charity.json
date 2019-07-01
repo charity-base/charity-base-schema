@@ -475,6 +475,44 @@
         }
       }
     },
+    "image": {
+      "properties": {
+        "logo": {
+          "properties": {
+            "small": {
+              "properties": {
+                "Bucket": {
+                  "type": "keyword"
+                },
+                "Key": {
+                  "type": "keyword"
+                }
+              }
+            },
+            "medium": {
+              "properties": {
+                "Bucket": {
+                  "type": "keyword"
+                },
+                "Key": {
+                  "type": "keyword"
+                }
+              }
+            },
+            "large": {
+              "properties": {
+                "Bucket": {
+                  "type": "keyword"
+                },
+                "Key": {
+                  "type": "keyword"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "isRegistered": {
       "type": "boolean"
     },
